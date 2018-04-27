@@ -24,7 +24,7 @@ for (var i = 0; i < elements.length; i++) {
         }
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/Donald Trump/gi, 'Fat Fascist Fucking Asshole');
+            var replacedText = text.replace(/Donald Trump/gi, 'Fat Fascist');
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
@@ -32,7 +32,15 @@ for (var i = 0; i < elements.length; i++) {
         }
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/Donald John Trump/gi, 'Fat Fascist Fucking Asshole');
+            var replacedText = text.replace(/Donald John Trump/gi, 'Fat Fascist');
+
+            if (replacedText !== text) {
+                element.replaceChild(document.createTextNode(replacedText), node);
+            }
+        }
+        if (node.nodeType === 3) {
+            var text = node.nodeValue;
+            var replacedText = text.replace(/President Trump/gi, 'Fat Fascist');
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
