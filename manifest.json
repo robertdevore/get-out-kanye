@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Get Out Kanye",
+    "description": "A Chrome extension that replaces any mention of the name Kanye West with Chris Washington",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
