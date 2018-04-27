@@ -22,5 +22,21 @@ for (var i = 0; i < elements.length; i++) {
                 element.replaceChild(document.createTextNode(replacedText), node);
             }
         }
+        if (node.nodeType === 3) {
+            var text = node.nodeValue;
+            var replacedText = text.replace(/Donald Trump/gi, 'Fat Fascist Fucking Asshole');
+
+            if (replacedText !== text) {
+                element.replaceChild(document.createTextNode(replacedText), node);
+            }
+        }
+        if (node.nodeType === 3) {
+            var text = node.nodeValue;
+            var replacedText = text.replace(/Donald John Trump/gi, 'Fat Fascist Fucking Asshole');
+
+            if (replacedText !== text) {
+                element.replaceChild(document.createTextNode(replacedText), node);
+            }
+        }
     }
 }
